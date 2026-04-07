@@ -1,405 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <title>Maximiliano Arrieta | Desarrollador de Software</title>
-  <meta name="description" content="Portfolio personal de Maximiliano Arrieta, desarrollador de software especializado en C#, .NET, ASP.NET, SQL Server y seguridad informática. Santa Rosa, La Pampa." />
-  <meta name="keywords" content="Maximiliano Arrieta, desarrollador software, C#, .NET, ASP.NET, SQL Server, Entity Framework, seguridad informática, Santa Rosa La Pampa, Argentina" />
-  <meta name="author" content="Maximiliano Arrieta" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Maximiliano Arrieta | Desarrollador de Software" />
-  <meta property="og:description" content="Portfolio personal de Maximiliano Arrieta, desarrollador de software con foco en .NET, C# y SQL Server." />
-  <meta property="og:type" content="website" />
-
-  <!-- Bootstrap 5.3 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <meta name="description" content="Portfolio personal de Maximiliano Arrieta, estudiante de Desarrollo de Software.">
+    <meta name="keywords" content="Maximiliano Arrieta, Desarrollador, Software, Portfolio, C#, .NET, SQL Server">
+    <title>Maximiliano Arrieta - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- ===== HEADER / NAVBAR ===== -->
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          &lt;<span>Maxi</span>/&gt;
-        </a>
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarMain"
-                aria-controls="navbarMain" aria-expanded="false"
-                aria-label="Alternar navegación">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMain">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-            <li class="nav-item"><a class="nav-link" href="cv.html">Currículum</a></li>
-            <li class="nav-item ms-lg-3">
-              <a class="btn-primary-custom" href="#contacto">Contratame</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Maximiliano Arrieta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!-- ===== MAIN ===== -->
-  <main>
+    <main class="container my-5 flex-grow-1">
+        <section class="row align-items-center hero-section">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="assets/img/perfil.jpg" alt="Foto de Maximiliano Arrieta" class="img-fluid rounded-circle shadow profile-img">
+            </div>
+            <div class="col-md-8">
+                <h1 class="display-4 fw-bold">Hola, soy Maximiliano Arrieta </h1>
+                <h2 class="text-muted fs-4 mb-3">Técnico Superior en Desarrollo de Software en formación </h2>
+                <p class="lead">
+                    Tengo 24 años, hace dos que estudio Desarrollo de Software en la universidad y de forma autodidacta. 
+                    Busco adquirir más conocimientos y ganar experiencia real en el camino, para así comenzar a desarrollar mi carrera profesional.
+                </p>
+                <p>
+                    Tengo sólidos conocimientos en C#, .NET, Entity Framework, ASP.NET, MVC, y bases de datos relacionales como SQL Server.
+                </p>
+                <a href="proyectos.html" class="btn btn-primary btn-lg mt-3">Ver mis proyectos</a>
+            </div>
+        </section>
+    </main>
 
-    <!-- ---- Hero Section ---- -->
-    <section class="hero" id="inicio">
-      <div class="hero-bg"></div>
-      <div class="hero-grid"></div>
-      <div class="container hero-content">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <span class="hero-tag">📍 Santa Rosa, La Pampa · Disponible</span>
-            <h1 class="hero-title">
-              Hola, soy<br>
-              <span class="highlight">Maximiliano Arrieta</span>
-            </h1>
-            <p class="hero-subtitle">
-              <span id="typed-role">Desarrollador .NET</span> — apasionado por construir
-              software robusto, escalable y seguro con tecnologías del ecosistema Microsoft.
-            </p>
-            <div class="hero-actions">
-              <a href="proyectos.html" class="btn-primary-custom">
-                <i class="bi bi-grid-3x3-gap"></i> Ver mis proyectos
-              </a>
-              <a href="cv.html" class="btn-outline-custom">
-                <i class="bi bi-file-person"></i> Mi CV
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center mt-5 mt-lg-0">
-            <div style="position:relative; width:300px; height:300px;">
-              <div style="
-                width:300px; height:300px;
-                border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
-                background: linear-gradient(135deg, rgba(124,92,252,0.25), rgba(0,229,192,0.15));
-                border: 1px solid rgba(124,92,252,0.3);
-                display:flex; align-items:center; justify-content:center;
-                font-size: 7rem;
-                animation: float 6s ease-in-out infinite;
-              ">👨‍💻</div>
-            </div>
-          </div>
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Desarrollado por Maximiliano Arrieta</p>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <!-- ---- Sobre mí rápido ---- -->
-    <section style="background: var(--color-surface);">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-5 reveal">
-            <span class="section-label">// sobre mí</span>
-            <h2 class="section-title">¿Quién soy?</h2>
-            <p style="color:var(--color-muted); line-height:1.9;">
-              Tengo 24 años y hace dos que estudio Desarrollo de Software en la universidad y de forma autodidacta.
-              Me apasiona crear soluciones de software reales, desde sistemas de gestión hasta proyectos con hardware embebido.
-            </p>
-            <p style="color:var(--color-muted); line-height:1.9;">
-              Busco adquirir más conocimientos y ganar experiencia real para comenzar a desarrollar mi carrera profesional.
-            </p>
-            <div class="mt-4 d-flex gap-3">
-              <a href="https://www.linkedin.com/in/maximiliano-arrieta-63096a253" target="_blank" class="btn-outline-custom" style="padding:0.6rem 1.2rem; font-size:0.82rem;">
-                <i class="bi bi-linkedin"></i> LinkedIn
-              </a>
-              <a href="https://www.facebook.com/maximiliano.arrieta.75/" target="_blank" class="btn-outline-custom" style="padding:0.6rem 1.2rem; font-size:0.82rem;">
-                <i class="bi bi-facebook"></i> Facebook
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-7 reveal" style="transition-delay:0.2s">
-            <div class="row g-3">
-              <div class="col-6">
-                <div class="card-custom text-center" style="padding:1.5rem;">
-                  <div class="stat-number">2+</div>
-                  <div class="footer-text mt-1">Años estudiando</div>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="card-custom text-center" style="padding:1.5rem;">
-                  <div class="stat-number">3</div>
-                  <div class="footer-text mt-1">Proyectos destacados</div>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="card-custom text-center" style="padding:1.5rem;">
-                  <div class="stat-number">1</div>
-                  <div class="footer-text mt-1">Certificación universitaria</div>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="card-custom text-center" style="padding:1.5rem;">
-                  <div class="stat-number">∞</div>
-                  <div class="footer-text mt-1">Ganas de crecer</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ---- Servicios / Conocimientos ---- -->
-    <section id="servicios">
-      <div class="container">
-        <div class="text-center mb-5">
-          <span class="section-label">// lo que hago</span>
-          <h2 class="section-title">Conocimientos</h2>
-          <p class="section-desc mx-auto">
-            Mi stack técnico está orientado al ecosistema Microsoft y al desarrollo backend, con experiencia también en proyectos de hardware.
-          </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4 reveal">
-            <div class="card-custom">
-              <span class="card-icon">⚙️</span>
-              <h3 class="card-title">Programación .NET</h3>
-              <p class="card-text">
-                Sólidos conocimientos en C#, estructura de datos, algoritmos, Entity Framework, ASP.NET MVC, WebApi y .NET MAUI.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.1s">
-            <div class="card-custom">
-              <span class="card-icon">🗄️</span>
-              <h3 class="card-title">Bases de Datos</h3>
-              <p class="card-text">
-                Conocimientos en bases de datos relacionales, utilizando principalmente SQL Server para diseño, consultas y optimización.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.2s">
-            <div class="card-custom">
-              <span class="card-icon">📐</span>
-              <h3 class="card-title">Modelado de Sistemas</h3>
-              <p class="card-text">
-                Conocimientos teóricos y prácticos de UML, diagramas de flujo de datos y diagramas entidad-relación.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.3s">
-            <div class="card-custom">
-              <span class="card-icon">🔐</span>
-              <h3 class="card-title">Seguridad Informática</h3>
-              <p class="card-text">
-                Experto Universitario en Seguridad de la Información — UTN. Conocimientos teóricos aplicados al desarrollo seguro.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.4s">
-            <div class="card-custom">
-              <span class="card-icon">🌐</span>
-              <h3 class="card-title">Desarrollo Web</h3>
-              <p class="card-text">
-                Maquetación con HTML5, CSS3 y Bootstrap. Creación de APIs REST con ASP.NET WebApi para integrar con cualquier cliente.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.5s">
-            <div class="card-custom">
-              <span class="card-icon">🤖</span>
-              <h3 class="card-title">Hardware & IoT</h3>
-              <p class="card-text">
-                Experiencia en proyectos con ESP-32, MQTT, NODE-RED y MySQL para conectar hardware con software en tiempo real.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ---- Skills ---- -->
-    <section style="background: var(--color-surface);">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-5 reveal">
-            <span class="section-label">// stack tecnológico</span>
-            <h2 class="section-title">Tecnologías</h2>
-            <p class="section-desc">
-              Las herramientas con las que trabajo en el día a día, ordenadas por área.
-            </p>
-            <a href="cv.html" class="btn-outline-custom mt-2">
-              <i class="bi bi-arrow-right"></i> Ver CV completo
-            </a>
-          </div>
-          <div class="col-lg-7 reveal" style="transition-delay:0.2s">
-            <div>
-              <p class="footer-text mb-2" style="letter-spacing:0.1em; font-size:0.75rem; text-transform:uppercase;">Backend / .NET</p>
-              <span class="skill-badge">C#</span>
-              <span class="skill-badge">.NET</span>
-              <span class="skill-badge">ASP.NET MVC</span>
-              <span class="skill-badge">WebApi</span>
-              <span class="skill-badge">Entity Framework</span>
-              <span class="skill-badge">.NET MAUI</span>
-            </div>
-            <div class="mt-3">
-              <p class="footer-text mb-2" style="letter-spacing:0.1em; font-size:0.75rem; text-transform:uppercase;">Bases de Datos</p>
-              <span class="skill-badge">SQL Server</span>
-              <span class="skill-badge">MySQL</span>
-              <span class="skill-badge">Diseño ER</span>
-            </div>
-            <div class="mt-3">
-              <p class="footer-text mb-2" style="letter-spacing:0.1em; font-size:0.75rem; text-transform:uppercase;">Web & IoT</p>
-              <span class="skill-badge">HTML5</span>
-              <span class="skill-badge">CSS3</span>
-              <span class="skill-badge">Bootstrap</span>
-              <span class="skill-badge">ESP-32</span>
-              <span class="skill-badge">MQTT</span>
-              <span class="skill-badge">NODE-RED</span>
-            </div>
-            <div class="mt-3">
-              <p class="footer-text mb-2" style="letter-spacing:0.1em; font-size:0.75rem; text-transform:uppercase;">Diseño & Modelado</p>
-              <span class="skill-badge">UML</span>
-              <span class="skill-badge">DFD</span>
-              <span class="skill-badge">Seguridad Informática</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ---- Contacto ---- -->
-    <section id="contacto">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-7 text-center mb-5">
-            <span class="section-label">// hablemos</span>
-            <h2 class="section-title">Contacto</h2>
-            <p class="section-desc mx-auto">
-              ¿Tenés un proyecto o una propuesta? Escribime y te respondo a la brevedad.
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-center g-4">
-          <!-- Info de contacto -->
-          <div class="col-lg-4">
-            <div class="card-custom reveal h-auto" style="height:auto !important;">
-              <div class="d-flex flex-column gap-4">
-                <div class="d-flex align-items-start gap-3">
-                  <i class="bi bi-telephone" style="color:var(--color-accent); font-size:1.3rem; margin-top:2px;"></i>
-                  <div>
-                    <div style="font-size:0.75rem; color:var(--color-muted); margin-bottom:0.2rem;">Teléfono</div>
-                    <div>(2954) 713226</div>
-                  </div>
-                </div>
-                <div class="d-flex align-items-start gap-3">
-                  <i class="bi bi-envelope" style="color:var(--color-accent); font-size:1.3rem; margin-top:2px;"></i>
-                  <div>
-                    <div style="font-size:0.75rem; color:var(--color-muted); margin-bottom:0.2rem;">Email</div>
-                    <a href="mailto:maxiarrieta01@gmail.com" style="color:var(--color-text); font-size:0.9rem;">maxiarrieta01@gmail.com</a>
-                  </div>
-                </div>
-                <div class="d-flex align-items-start gap-3">
-                  <i class="bi bi-geo-alt" style="color:var(--color-accent); font-size:1.3rem; margin-top:2px;"></i>
-                  <div>
-                    <div style="font-size:0.75rem; color:var(--color-muted); margin-bottom:0.2rem;">Ubicación</div>
-                    <div>Santa Rosa, La Pampa, Argentina</div>
-                  </div>
-                </div>
-                <div class="d-flex align-items-start gap-3">
-                  <i class="bi bi-linkedin" style="color:var(--color-accent); font-size:1.3rem; margin-top:2px;"></i>
-                  <div>
-                    <div style="font-size:0.75rem; color:var(--color-muted); margin-bottom:0.2rem;">LinkedIn</div>
-                    <a href="https://www.linkedin.com/in/maximiliano-arrieta-63096a253" target="_blank" style="color:var(--color-text); font-size:0.85rem;">maximiliano-arrieta</a>
-                  </div>
-                </div>
-                <div class="d-flex align-items-start gap-3">
-                  <i class="bi bi-facebook" style="color:var(--color-accent); font-size:1.3rem; margin-top:2px;"></i>
-                  <div>
-                    <div style="font-size:0.75rem; color:var(--color-muted); margin-bottom:0.2rem;">Facebook</div>
-                    <a href="https://www.facebook.com/maximiliano.arrieta.75/" target="_blank" style="color:var(--color-text); font-size:0.85rem;">maximiliano.arrieta.75</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Formulario -->
-          <div class="col-lg-8">
-            <div class="card-custom reveal" style="transition-delay:0.15s">
-              <form id="contact-form">
-                <div class="row g-4">
-                  <div class="col-md-6">
-                    <label class="form-label-custom">Nombre</label>
-                    <input type="text" class="form-control-custom" placeholder="Tu nombre" required />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label-custom">Email</label>
-                    <input type="email" class="form-control-custom" placeholder="tu@email.com" required />
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label-custom">Asunto</label>
-                    <input type="text" class="form-control-custom" placeholder="¿En qué puedo ayudarte?" required />
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label-custom">Mensaje</label>
-                    <textarea class="form-control-custom" rows="5" placeholder="Contame sobre tu proyecto o consulta..." required></textarea>
-                  </div>
-                  <div class="col-12 text-center">
-                    <button type="submit" class="btn-primary-custom px-5" style="font-size:1rem; padding:0.9rem 2.5rem;">
-                      <i class="bi bi-send"></i> Enviar mensaje
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <div class="container">
-      <div class="row align-items-center mb-3">
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="footer-brand">&lt;<span>Maxi</span>/&gt;</div>
-          <p class="footer-text mt-1">Desarrollador de Software</p>
-        </div>
-        <div class="col-md-4 text-center mb-3 mb-md-0">
-          <div class="footer-links">
-            <a href="index.html">Inicio</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="cv.html">CV</a>
-          </div>
-        </div>
-        <div class="col-md-4 text-md-end">
-          <div class="d-flex justify-content-md-end gap-3">
-            <a href="https://www.linkedin.com/in/maximiliano-arrieta-63096a253" target="_blank" title="LinkedIn" style="color:var(--color-muted); font-size:1.3rem;"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.facebook.com/maximiliano.arrieta.75/" target="_blank" title="Facebook" style="color:var(--color-muted); font-size:1.3rem;"><i class="bi bi-facebook"></i></a>
-            <a href="mailto:maxiarrieta01@gmail.com" title="Email" style="color:var(--color-muted); font-size:1.3rem;"><i class="bi bi-envelope"></i></a>
-          </div>
-        </div>
-      </div>
-      <hr class="divider" />
-      <div class="row mt-3">
-        <div class="col-12 text-center footer-text">
-          Desarrollado por <strong style="color:var(--color-text);">Maximiliano Arrieta</strong> &mdash;
-          &copy; <span class="current-year"></span> · Todos los derechos reservados.
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <style>
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-18px); }
-    }
-  </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
