@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Proyectos | Maximiliano Arrieta - Desarrollador de Software</title>
+  <meta name="description" content="Proyectos destacados de Maximiliano Arrieta: sistema de ventas con ASP.NET, administración de bases de datos con WebApi, y auto a control remoto con ESP-32 y MQTT." />
+  <meta name="keywords" content="proyectos software, ASP.NET, SQL Server, WebApi, ESP-32, MQTT, NODE-RED, C#, .NET, Maximiliano Arrieta" />
+  <meta name="author" content="Maximiliano Arrieta" />
+  <meta name="robots" content="index, follow" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">&lt;<span>Maxi</span>/&gt;</a>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false"
+                aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="cv.html">Currículum</a></li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn-primary-custom" href="index.html#contacto">Contratame</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- Page Header -->
+    <section style="padding: 4rem 0 2rem; background: var(--color-surface); position:relative; overflow:hidden;">
+      <div style="position:absolute; inset:0; background: radial-gradient(ellipse 50% 80% at 80% 50%, rgba(124,92,252,0.12) 0%, transparent 70%); pointer-events:none;"></div>
+      <div class="container" style="position:relative; z-index:1;">
+        <span class="section-label">// mi trabajo</span>
+        <h1 class="section-title">Proyectos Destacados</h1>
+        <p class="section-desc">
+          Proyectos reales que desarrollé durante mi formación, combinando backend, bases de datos, APIs y hardware.
+        </p>
+        <div class="d-flex flex-wrap gap-2 mt-3" id="filter-btns">
+          <button class="btn-primary-custom filter-btn" data-filter="all">Todos</button>
+          <button class="btn-outline-custom filter-btn" data-filter="web">Web / Backend</button>
+          <button class="btn-outline-custom filter-btn" data-filter="iot">IoT / Hardware</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid de Proyectos -->
+    <section>
+      <div class="container">
+        <div class="row g-4" id="projects-grid">
+
+          <!-- Proyecto 1: Sistema de ventas restaurante -->
+          <div class="col-md-6 col-lg-4 reveal project-item" data-category="web">
+            <div class="card-custom">
+              <div class="project-img-placeholder">🍽️</div>
+              <div class="d-flex flex-wrap gap-1 mb-2">
+                <span class="tag-pill">ASP.NET</span>
+                <span class="tag-pill">SQL Server</span>
+                <span class="tag-pill">C#</span>
+              </div>
+              <h3 class="card-title">Sistema de Ventas — Restaurante</h3>
+              <p class="card-text">
+                Sistema completo de ventas para restaurante construido con ASP.NET y SQL Server. Gestión de pedidos, productos, mesas y reportes de ventas.
+              </p>
+              <div class="d-flex gap-2 mt-3">
+                <button class="btn-outline-custom" style="padding:0.5rem 1rem; font-size:0.8rem;"
+                  data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                  <i class="bi bi-eye"></i> Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Sistema administración de BD -->
+          <div class="col-md-6 col-lg-4 reveal project-item" data-category="web" style="transition-delay:0.1s">
+            <div class="card-custom">
+              <div class="project-img-placeholder">🗄️</div>
+              <div class="d-flex flex-wrap gap-1 mb-2">
+                <span class="tag-pill">ASP.NET MVC</span>
+                <span class="tag-pill">WebApi</span>
+                <span class="tag-pill">Capas</span>
+                <span class="tag-pill">SQL Server</span>
+              </div>
+              <h3 class="card-title">Sistema de Administración de BD</h3>
+              <p class="card-text">
+                Aplicación con arquitectura en capas: presentación, lógica de negocio y datos. Incluye una WebApi REST para consumirlo desde cualquier tecnología cliente.
+              </p>
+              <div class="d-flex gap-2 mt-3">
+                <button class="btn-outline-custom" style="padding:0.5rem 1rem; font-size:0.8rem;"
+                  data-bs-toggle="modal" data-bs-target="#modalProyecto2">
+                  <i class="bi bi-eye"></i> Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: ESP-32 auto control remoto -->
+          <div class="col-md-6 col-lg-4 reveal project-item" data-category="iot" style="transition-delay:0.2s">
+            <div class="card-custom">
+              <div class="project-img-placeholder">🚗</div>
+              <div class="d-flex flex-wrap gap-1 mb-2">
+                <span class="tag-pill">ESP-32</span>
+                <span class="tag-pill">MQTT</span>
+                <span class="tag-pill">NODE-RED</span>
+                <span class="tag-pill">MySQL</span>
+              </div>
+              <h3 class="card-title">Auto RC por WiFi — ESP-32</h3>
+              <p class="card-text">
+                Proyecto IoT: auto a control remoto controlado por WiFi mediante protocolo MQTT, con dashboard en NODE-RED y registro de datos en MySQL.
+              </p>
+              <div class="d-flex gap-2 mt-3">
+                <button class="btn-outline-custom" style="padding:0.5rem 1rem; font-size:0.8rem;"
+                  data-bs-toggle="modal" data-bs-target="#modalProyecto3">
+                  <i class="bi bi-eye"></i> Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Mensaje si no hay proyectos filtrados -->
+        <div id="no-results" class="text-center py-5" style="display:none;">
+          <div style="font-size:3rem; margin-bottom:1rem;">🔍</div>
+          <p style="color:var(--color-muted);">No hay proyectos en esta categoría aún.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="background: var(--color-surface);">
+      <div class="container text-center">
+        <span class="section-label">// ¿trabajamos juntos?</span>
+        <h2 class="section-title reveal">¿Tenés un proyecto en mente?</h2>
+        <p class="section-desc mx-auto reveal">
+          Estoy abierto a nuevas oportunidades y proyectos desafiantes. ¡Escribime!
+        </p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap reveal">
+          <a href="index.html#contacto" class="btn-primary-custom">
+            <i class="bi bi-envelope"></i> Contactarme
+          </a>
+          <a href="cv.html" class="btn-outline-custom">
+            <i class="bi bi-file-person"></i> Ver mi CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== MODALS ===== -->
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="font-family:var(--font-display); font-weight:700;">🍽️ Sistema de Ventas — Restaurante</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="project-img-placeholder mb-4" style="height:160px; font-size:4rem;">🍽️</div>
+          <p style="color:var(--color-muted);">
+            Sistema completo de gestión de ventas para un restaurante, desarrollado con ASP.NET y SQL Server. Permite administrar pedidos, productos, mesas y generar reportes de ventas. El proyecto incluye autenticación de usuarios y diferentes roles de acceso.
+          </p>
+          <div class="mt-3">
+            <p class="footer-text mb-2" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em;">Tecnologías</p>
+            <span class="tag-pill">ASP.NET</span>
+            <span class="tag-pill">C#</span>
+            <span class="tag-pill">SQL Server</span>
+            <span class="tag-pill">HTML/CSS</span>
+          </div>
+          <div class="mt-3">
+            <p class="footer-text mb-2" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em;">Características</p>
+            <ul style="color:var(--color-muted); font-size:0.88rem; line-height:2;">
+              <li>Gestión de pedidos y mesas en tiempo real</li>
+              <li>Catálogo de productos con precios</li>
+              <li>Reportes de ventas diarias y mensuales</li>
+              <li>Sistema de autenticación con roles</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modalProyecto2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="font-family:var(--font-display); font-weight:700;">🗄️ Sistema de Administración de BD</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="project-img-placeholder mb-4" style="height:160px; font-size:4rem;">🗄️</div>
+          <p style="color:var(--color-muted);">
+            Sistema de administración de bases de datos con arquitectura separada en capas (presentación, negocio y datos) y una WebApi REST que permite consumirlo desde cualquier tecnología cliente. Diseñado para máxima escalabilidad y reutilización.
+          </p>
+          <div class="mt-3">
+            <p class="footer-text mb-2" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em;">Tecnologías</p>
+            <span class="tag-pill">ASP.NET MVC</span>
+            <span class="tag-pill">WebApi REST</span>
+            <span class="tag-pill">Entity Framework</span>
+            <span class="tag-pill">SQL Server</span>
+            <span class="tag-pill">C#</span>
+          </div>
+          <div class="mt-3">
+            <p class="footer-text mb-2" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em;">Arquitectura</p>
+            <ul style="color:var(--color-muted); font-size:0.88rem; line-height:2;">
+              <li>Separación en capas: UI, Negocio, Datos</li>
+              <li>WebApi REST para integración con clientes externos</li>
+              <li>Patrón repositorio con Entity Framework</li>
+              <li>CRUD completo sobre múltiples entidades</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modalProyecto3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="font-family:var(--font-display); font-weight:700;">🚗 Auto RC por WiFi — ESP-32</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="project-img-placeholder mb-4" style="height:160px; font-size:4rem;">🚗</div>
+          <p style="color:var(--color-muted);">
+            Proyecto de hardware e IoT: un auto a control remoto controlado por WiFi utilizando un ESP-32. La comunicación se realiza mediante el protocolo MQTT, con un dashboard visual en NODE-RED y registro de telemetría en MySQL. Combina electrónica, firmware y software.
+          </p>
+          <div class="mt-3">
+            <p class="footer-text mb-2" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em;">Tecnologías</p>
+            <span class="tag-pill">ESP-32</span>
+            <span class="tag-pill">MQTT</span>
+            <span class="tag-pill">NODE-RED</span>
+            <span class="tag-pill">MySQL</span>
+            <span class="tag-pill">WiFi</span>
+          </div>
+          <div class="mt-3">
+            <p class="footer-text mb-2" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em;">Características</p>
+            <ul style="color:var(--color-muted); font-size:0.88rem; line-height:2;">
+              <li>Control en tiempo real vía WiFi desde cualquier dispositivo</li>
+              <li>Dashboard de control con NODE-RED</li>
+              <li>Registro de movimientos y telemetría en MySQL</li>
+              <li>Protocolo MQTT para mensajería liviana y eficiente</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center mb-3">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="footer-brand">&lt;<span>Maxi</span>/&gt;</div>
+          <p class="footer-text mt-1">Desarrollador de Software</p>
+        </div>
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <div class="footer-links">
+            <a href="index.html">Inicio</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="cv.html">CV</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <div class="d-flex justify-content-md-end gap-3">
+            <a href="https://www.linkedin.com/in/maximiliano-arrieta-63096a253" target="_blank" style="color:var(--color-muted); font-size:1.3rem;"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/maximiliano.arrieta.75/" target="_blank" style="color:var(--color-muted); font-size:1.3rem;"><i class="bi bi-facebook"></i></a>
+            <a href="mailto:maxiarrieta01@gmail.com" style="color:var(--color-muted); font-size:1.3rem;"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <div class="row mt-3">
+        <div class="col-12 text-center footer-text">
+          Desarrollado por <strong style="color:var(--color-text);">Maximiliano Arrieta</strong> &mdash;
+          &copy; <span class="current-year"></span> · Todos los derechos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Filtro de proyectos
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('btn-primary-custom');
+          b.classList.add('btn-outline-custom');
+        });
+        btn.classList.add('btn-primary-custom');
+        btn.classList.remove('btn-outline-custom');
+        const filter = btn.dataset.filter;
+        let visible = 0;
+        projectItems.forEach(item => {
+          const show = filter === 'all' || item.dataset.category === filter;
+          item.style.display = show ? 'block' : 'none';
+          if (show) visible++;
+        });
+        document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

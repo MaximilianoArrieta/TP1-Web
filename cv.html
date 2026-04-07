@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Currículum | Maximiliano Arrieta - Desarrollador de Software</title>
+  <meta name="description" content="CV de Maximiliano Arrieta: Técnico en Desarrollo de Software, Experto Universitario en Seguridad de la Información (UTN), con experiencia en C#, .NET, ASP.NET y SQL Server." />
+  <meta name="keywords" content="currículum Maximiliano Arrieta, desarrollador software, C#, .NET, ASP.NET, SQL Server, UTN, seguridad informática, Santa Rosa La Pampa" />
+  <meta name="author" content="Maximiliano Arrieta" />
+  <meta name="robots" content="index, follow" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">&lt;<span>Maxi</span>/&gt;</a>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false"
+                aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="cv.html">Currículum</a></li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn-primary-custom" href="index.html#contacto">Contratame</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- Page Header -->
+    <section style="padding: 4rem 0 2rem; background: var(--color-surface); position:relative; overflow:hidden;">
+      <div style="position:absolute; inset:0; background: radial-gradient(ellipse 50% 80% at 20% 50%, rgba(0,229,192,0.1) 0%, transparent 70%); pointer-events:none;"></div>
+      <div class="container" style="position:relative; z-index:1;">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <span class="section-label">// trayectoria</span>
+            <h1 class="section-title">Currículum Vitae</h1>
+            <p class="section-desc">
+              Mi formación, experiencia y habilidades. En constante crecimiento profesional.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <!-- Botón que abre el PDF directamente -->
+            <a href="assets/docs/cv-maximiliano-arrieta.pdf" target="_blank" class="btn-primary-custom">
+              <i class="bi bi-file-earmark-pdf"></i> Ver CV en PDF
+            </a>
+            <!-- Botón de descarga -->
+            <a href="assets/docs/cv-maximiliano-arrieta.pdf" download="CV-Maximiliano-Arrieta.pdf"
+               class="btn-outline-custom mt-2 mt-lg-0 ms-lg-2">
+              <i class="bi bi-download"></i> Descargar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenido CV -->
+    <section>
+      <div class="container">
+        <div class="row g-5">
+
+          <!-- Columna izquierda -->
+          <div class="col-lg-4">
+
+            <!-- Perfil -->
+            <div class="card-custom mb-4 reveal">
+              <div class="text-center mb-3">
+                <div style="
+                  width:90px; height:90px;
+                  border-radius:50%;
+                  background: linear-gradient(135deg, rgba(124,92,252,0.3), rgba(0,229,192,0.2));
+                  border: 2px solid var(--color-accent);
+                  display:inline-flex; align-items:center; justify-content:center;
+                  font-size:2.5rem; margin-bottom:1rem;
+                ">👨‍💻</div>
+                <h2 style="font-family:var(--font-display); font-size:1.3rem; font-weight:700; margin-bottom:0.25rem;">Maximiliano Arrieta</h2>
+                <p style="color:var(--color-accent2); font-size:0.82rem; font-family:var(--font-mono);">Desarrollador de Software</p>
+              </div>
+              <hr class="divider mb-3" />
+              <div class="d-flex flex-column gap-2">
+                <div class="d-flex align-items-center gap-2" style="color:var(--color-muted); font-size:0.85rem;">
+                  <i class="bi bi-geo-alt" style="color:var(--color-accent);"></i>
+                  <span>Juana Azurduy 2434, Santa Rosa, La Pampa</span>
+                </div>
+                <div class="d-flex align-items-center gap-2" style="color:var(--color-muted); font-size:0.85rem;">
+                  <i class="bi bi-telephone" style="color:var(--color-accent);"></i>
+                  <span>(2954) 713226</span>
+                </div>
+                <div class="d-flex align-items-center gap-2" style="font-size:0.85rem;">
+                  <i class="bi bi-envelope" style="color:var(--color-accent);"></i>
+                  <a href="mailto:maxiarrieta01@gmail.com" style="color:var(--color-muted);">maxiarrieta01@gmail.com</a>
+                </div>
+                <div class="d-flex align-items-center gap-2" style="font-size:0.85rem;">
+                  <i class="bi bi-linkedin" style="color:var(--color-accent);"></i>
+                  <a href="https://www.linkedin.com/in/maximiliano-arrieta-63096a253" target="_blank" style="color:var(--color-muted);">LinkedIn</a>
+                </div>
+                <div class="d-flex align-items-center gap-2" style="font-size:0.85rem;">
+                  <i class="bi bi-facebook" style="color:var(--color-accent);"></i>
+                  <a href="https://www.facebook.com/maximiliano.arrieta.75/" target="_blank" style="color:var(--color-muted);">Facebook</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Habilidades técnicas -->
+            <div class="card-custom mb-4 reveal" style="transition-delay:0.1s">
+              <h3 class="card-title mb-3">
+                <i class="bi bi-code-slash me-2" style="color:var(--color-accent);"></i>
+                Conocimientos
+              </h3>
+              <div class="d-flex flex-column gap-3">
+                <div>
+                  <div class="d-flex justify-content-between mb-1" style="font-size:0.82rem;">
+                    <span>C# / .NET</span><span style="color:var(--color-accent2);">85%</span>
+                  </div>
+                  <div style="height:6px; background:var(--color-border); border-radius:99px; overflow:hidden;">
+                    <div style="width:85%; height:100%; background:linear-gradient(90deg,var(--color-accent),var(--color-accent2)); border-radius:99px;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between mb-1" style="font-size:0.82rem;">
+                    <span>ASP.NET / WebApi</span><span style="color:var(--color-accent2);">80%</span>
+                  </div>
+                  <div style="height:6px; background:var(--color-border); border-radius:99px; overflow:hidden;">
+                    <div style="width:80%; height:100%; background:linear-gradient(90deg,var(--color-accent),var(--color-accent2)); border-radius:99px;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between mb-1" style="font-size:0.82rem;">
+                    <span>SQL Server</span><span style="color:var(--color-accent2);">78%</span>
+                  </div>
+                  <div style="height:6px; background:var(--color-border); border-radius:99px; overflow:hidden;">
+                    <div style="width:78%; height:100%; background:linear-gradient(90deg,var(--color-accent),var(--color-accent2)); border-radius:99px;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between mb-1" style="font-size:0.82rem;">
+                    <span>Entity Framework</span><span style="color:var(--color-accent2);">75%</span>
+                  </div>
+                  <div style="height:6px; background:var(--color-border); border-radius:99px; overflow:hidden;">
+                    <div style="width:75%; height:100%; background:linear-gradient(90deg,var(--color-accent),var(--color-accent2)); border-radius:99px;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between mb-1" style="font-size:0.82rem;">
+                    <span>HTML5 / Bootstrap</span><span style="color:var(--color-accent2);">70%</span>
+                  </div>
+                  <div style="height:6px; background:var(--color-border); border-radius:99px; overflow:hidden;">
+                    <div style="width:70%; height:100%; background:linear-gradient(90deg,var(--color-accent),var(--color-accent2)); border-radius:99px;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between mb-1" style="font-size:0.82rem;">
+                    <span>ESP-32 / MQTT / IoT</span><span style="color:var(--color-accent2);">65%</span>
+                  </div>
+                  <div style="height:6px; background:var(--color-border); border-radius:99px; overflow:hidden;">
+                    <div style="width:65%; height:100%; background:linear-gradient(90deg,var(--color-accent),var(--color-accent2)); border-radius:99px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Idiomas -->
+            <div class="card-custom mb-4 reveal" style="transition-delay:0.2s">
+              <h3 class="card-title mb-3">
+                <i class="bi bi-translate me-2" style="color:var(--color-accent);"></i>
+                Idiomas
+              </h3>
+              <div class="d-flex flex-column gap-2" style="font-size:0.88rem; color:var(--color-muted);">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Español</span>
+                  <span class="skill-badge">Nativo</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Inglés</span>
+                  <span class="skill-badge">Intermedio</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aptitudes -->
+            <div class="card-custom reveal" style="transition-delay:0.3s">
+              <h3 class="card-title mb-3">
+                <i class="bi bi-star me-2" style="color:var(--color-accent);"></i>
+                Aptitudes
+              </h3>
+              <div>
+                <span class="skill-badge">Predisposición</span>
+                <span class="skill-badge">Trabajo en equipo</span>
+                <span class="skill-badge">Pensamiento crítico</span>
+                <span class="skill-badge">Comunicación clara</span>
+                <span class="skill-badge">Autonomía</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="col-lg-8">
+
+            <!-- Perfil / Objetivo -->
+            <div class="card-custom mb-4 reveal">
+              <h3 class="card-title mb-3">
+                <i class="bi bi-person me-2" style="color:var(--color-accent);"></i>
+                Perfil &amp; Objetivos
+              </h3>
+              <p style="color:var(--color-muted); line-height:1.9;">
+                Tengo 24 años y hace dos que estudio Desarrollo de Software en la universidad y de forma autodidacta.
+                Me caracterizo por mi predisposición, capacidad para trabajar solo o en equipo, pensamiento crítico y claridad en la comunicación.
+              </p>
+              <p style="color:var(--color-muted); line-height:1.9; margin-bottom:0;">
+                Busco adquirir más conocimientos y ganar experiencia real en el camino, para así comenzar a desarrollar mi carrera profesional en el mundo del software.
+              </p>
+            </div>
+
+            <!-- Experiencia laboral -->
+            <div class="card-custom mb-4 reveal" style="transition-delay:0.1s">
+              <h3 class="card-title mb-4">
+                <i class="bi bi-briefcase me-2" style="color:var(--color-accent);"></i>
+                Experiencia Laboral
+              </h3>
+              <div class="timeline">
+
+                <div class="timeline-item">
+                  <div class="timeline-date">Octubre 2021 — Mayo 2022</div>
+                  <div class="timeline-title">Soldado Voluntario de Segunda</div>
+                  <div class="timeline-org">Ejército Argentino</div>
+                  <p class="timeline-desc">
+                    Servicio voluntario en el Ejército Argentino. Desarrollo de disciplina, trabajo en equipo y capacidad de respuesta bajo presión.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-date">Mayo 2020 — Septiembre 2020</div>
+                  <div class="timeline-title">Mesero</div>
+                  <div class="timeline-org">Gastronomía</div>
+                  <p class="timeline-desc">
+                    Atención al cliente en servicios gastronómicos. Comunicación efectiva y trabajo bajo presión.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-date">Enero 2019 — Septiembre 2021</div>
+                  <div class="timeline-title">Peón de Albañil</div>
+                  <div class="timeline-org">Construcción</div>
+                  <p class="timeline-desc">
+                    Trabajo en construcción civil. Responsabilidad, esfuerzo físico y trabajo en equipo.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Educación -->
+            <div class="card-custom mb-4 reveal" style="transition-delay:0.2s">
+              <h3 class="card-title mb-4">
+                <i class="bi bi-mortarboard me-2" style="color:var(--color-accent);"></i>
+                Formación Académica
+              </h3>
+              <div class="timeline">
+
+                <div class="timeline-item">
+                  <div class="timeline-date">Enero 2023 — Actualidad</div>
+                  <div class="timeline-title">Técnico Superior en Desarrollo de Software</div>
+                  <div class="timeline-org">Instituto Tecnológico de Educación Superior (ITES)</div>
+                  <p class="timeline-desc">
+                    Formación en programación orientada a objetos, bases de datos, arquitectura de software, modelado UML y desarrollo web. En curso.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-date">Junio 2022 — Diciembre 2022</div>
+                  <div class="timeline-title">Experto Universitario en Seguridad de la Información</div>
+                  <div class="timeline-org">Universidad Tecnológica Nacional (UTN)</div>
+                  <p class="timeline-desc">
+                    Certificación universitaria en seguridad informática, criptografía, protección de datos, análisis de vulnerabilidades y normativas de seguridad.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-date">Enero 2022 — Diciembre 2022</div>
+                  <div class="timeline-title">Carpintero de Obra Fina</div>
+                  <div class="timeline-org">Formación Técnica</div>
+                  <p class="timeline-desc">
+                    Capacitación en carpintería de obra fina. Desarrollo de precisión, atención al detalle y habilidades técnicas manuales.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-date">Febrero 2013 — Diciembre 2018</div>
+                  <div class="timeline-title">Bachiller con orientación en Ciencias Sociales y Humanidades</div>
+                  <div class="timeline-org">Instituto María Auxiliadora, Santa Rosa, La Pampa</div>
+                  <p class="timeline-desc">
+                    Educación secundaria completa con orientación humanística.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Certificados -->
+            <div class="card-custom reveal" style="transition-delay:0.3s">
+              <h3 class="card-title mb-4">
+                <i class="bi bi-patch-check me-2" style="color:var(--color-accent);"></i>
+                Certificados
+              </h3>
+              <div class="row g-3">
+                <div class="col-12">
+                  <div style="border:1px solid var(--color-border); border-radius:var(--radius); padding:1.2rem; background:var(--color-surface); display:flex; align-items:center; gap:1rem;">
+                    <div style="font-size:2rem;">🔐</div>
+                    <div>
+                      <div style="color:var(--color-accent2); font-size:0.75rem; font-family:var(--font-mono); margin-bottom:0.3rem;">Universidad Tecnológica Nacional (UTN) · 2022</div>
+                      <div style="font-family:var(--font-display); font-weight:700;">Experto Universitario en Seguridad de la Información</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Botones de descarga/visualización del PDF dentro del CV -->
+              <div class="mt-4 p-3" style="border:1px dashed var(--color-accent); border-radius:var(--radius); background:rgba(124,92,252,0.05);">
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                  <i class="bi bi-file-earmark-pdf" style="font-size:2rem; color:var(--color-accent);"></i>
+                  <div class="flex-grow-1">
+                    <div style="font-family:var(--font-display); font-weight:700; margin-bottom:0.2rem;">CV Completo en PDF</div>
+                    <div style="color:var(--color-muted); font-size:0.85rem;">Versión descargable con toda la información.</div>
+                  </div>
+                  <div class="d-flex gap-2 flex-wrap">
+                    <a href="assets/docs/cv-maximiliano-arrieta.pdf" target="_blank" class="btn-primary-custom" style="padding:0.6rem 1.2rem; font-size:0.82rem;">
+                      <i class="bi bi-eye"></i> Ver
+                    </a>
+                    <a href="assets/docs/cv-maximiliano-arrieta.pdf" download="CV-Maximiliano-Arrieta.pdf" class="btn-outline-custom" style="padding:0.6rem 1.2rem; font-size:0.82rem;">
+                      <i class="bi bi-download"></i> Descargar
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center mb-3">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="footer-brand">&lt;<span>Maxi</span>/&gt;</div>
+          <p class="footer-text mt-1">Desarrollador de Software</p>
+        </div>
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <div class="footer-links">
+            <a href="index.html">Inicio</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="cv.html">CV</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <div class="d-flex justify-content-md-end gap-3">
+            <a href="https://www.linkedin.com/in/maximiliano-arrieta-63096a253" target="_blank" style="color:var(--color-muted); font-size:1.3rem;"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/maximiliano.arrieta.75/" target="_blank" style="color:var(--color-muted); font-size:1.3rem;"><i class="bi bi-facebook"></i></a>
+            <a href="mailto:maxiarrieta01@gmail.com" style="color:var(--color-muted); font-size:1.3rem;"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <div class="row mt-3">
+        <div class="col-12 text-center footer-text">
+          Desarrollado por <strong style="color:var(--color-text);">Maximiliano Arrieta</strong> &mdash;
+          &copy; <span class="current-year"></span> · Todos los derechos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
